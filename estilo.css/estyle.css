@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(/imagens/th.jpg);
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* border: 1px solid red;  */
+    height: 1200px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(182, 173, 173);  
+    height: 10em;
+}
+nav{
+  display: flex;
+  gap: 34px;
+  font-size: 20px;
+  justify-content: center;
+  /* margin-top: 90px; */
+  align-items: center;
+}
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+}
+nav a:hover{
+    color: rgb(13, 233, 104);
+}
+section{
+    display: flex;
+    /* border: 1px solid blue; */
+    height: 70em;
+
+}
+.barra-lateral{
+    display: flex;
+    border-right: 1px solid rgb(143, 139, 139);
+    flex-direction: column;
+    width: 30%;
+    /* border: 1px solid green; */
+
+    
+}
+.titulo{
+    display: flex;
+    color: white;
+    font-size: 27px;
+    margin-top: 15px;
+    justify-content: center;
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 70%;
+    /* border: 1px solid red; */
+}
+.playes{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+.playes a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 15.5%;
+    width: 123px;
+    /* border: 1px solid red; */
+    margin-top: 25px;
+}
+.playes a:hover{
+    color: rgb(13, 233, 104);
+
+}
+.tt{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+.text{
+    display: flex;
+    color: white;
+    text-align: center;
+    margin-left: 1%;
+    margin-top: 20px;
+}
+.tr{
+    color: white;
+    display: flex;
+    margin-top: 40px;
+    font-size: 30px;
+    justify-content: center;
+}
+p{
+    display: flex;
+    color: white;
+    margin-top: 20px;
+    justify-content: center;
+}
+.conteudo2{
+    /* display: flex; */
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+@media (max-width: 768px) {
+    .section {
+        display: flex;
+        flex-direction: column; /* Faz a barra lateral e o conteúdo empilharem verticalmente */
+    }
+
+    .barra-lateral {
+        width: 100%;
+        order: 2; /* Faz a barra lateral ser exibida depois do conteúdo */
+        height: auto;
+        /* border: 1px solid green; */
+    }
+
+    .conteudo {
+        width: 100%;
+        order: 1; /* Faz o conteúdo ser exibido antes da barra lateral */
+        /* border: 1px solid red; */
+    }
+}
