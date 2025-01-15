@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 body{
-    background: url(/imagens/th.jpg);
+     background: url(/imagens/th.jpg) no-repeat center center fixed;
+background-size: cover;
+    background-size: cover;
     font-family: 'Montserrat', sans-serif;
     
 }
